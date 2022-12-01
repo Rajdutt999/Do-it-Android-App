@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/pending_due_sort"
+        android:title="Filter : Due" />
+    <item android:id="@+id/filter_pending"
+        android:title="Filter : Pending" />
+    <item android:id="@+id/sort_due"
+        android:title="Sort: Due date" />
+    <item android:id="@+id/sort_subj"
+        android:title="Sort: Subjects" />
+    <item android:id="@+id/id_none"
+        android:title="None" />
+</menu>

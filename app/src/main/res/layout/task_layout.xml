@@ -1,0 +1,87 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+
+    app:cardElevation="4dp"
+    app:cardCornerRadius="8dp"
+
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="8dp">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+
+        <CheckBox
+            android:id="@+id/todoCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textName"
+            android:layout_marginTop="18dp"
+            android:buttonTint="@android:color/holo_green_dark"
+            android:paddingStart="8dp"
+            android:text="@string/string1" />
+
+        <TextView
+            android:id="@+id/DueDate"
+            android:layout_width="82dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textName"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="76dp"
+            android:ems="10"
+            android:paddingEnd="10dp"
+            android:singleLine="true"
+            android:text="22-07-2021"
+            android:textAlignment="textEnd"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/DueTime"
+            android:layout_width="52dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textName"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="24dp"
+            android:ems="10"
+            android:paddingEnd="10dp"
+            android:singleLine="true"
+            android:text="09:00"
+            android:textAlignment="textEnd"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="5dp"
+            android:text="New Task"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/subject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/todoCheckBox"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="-16dp"
+            android:layout_marginTop="-21dp"
+            android:layout_marginEnd="34dp"
+            android:layout_marginBottom="-16dp"
+            android:paddingStart="5dp"
+            android:text="OOP"
+            android:textColor="#554E4E"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

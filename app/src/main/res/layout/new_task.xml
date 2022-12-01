@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/newTaskText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="-27dp"
+        android:background="@null"
+        android:hint="New Task Name"
+        android:maxLength="16"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <Button
+        android:id="@+id/newTaskButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newTaskDescription"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="1dp"
+        android:background="@android:color/transparent"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/newTaskDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/newTaskText"
+        android:layout_alignBottom="@+id/newTaskText"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="-46dp"
+        android:background="@null"
+        android:hint="New Task"
+        android:lines="2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="269dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/newTaskText"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="142dp"
+        android:layout_marginBottom="-69dp" />
+
+
+    <EditText
+        android:id="@+id/in_date"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="95dp"
+        android:focusable="false"
+        android:onClick="onClick"
+        android:textAlignment="center"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/in_time"
+        android:layout_width="62dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newTaskText"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="81dp"
+        android:layout_marginLeft="163dp"
+        android:layout_marginTop="98dp"
+        android:focusable="false"
+        android:onClick="onClick"
+        android:textAlignment="center"
+        android:textSize="12sp" />
+
+
+</RelativeLayout>
